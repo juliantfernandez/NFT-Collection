@@ -2,7 +2,7 @@ const path = require('path')
 
 let userControlador = {
     register: (req,res) =>{
-        res.render('register')
+        res.render('user/register')
     },
     login: (req, res) => {
         res.render('user/login')

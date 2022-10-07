@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "nick": "Rare Zombie",
+        "price": "2500"
+    },
+    {
+    "id": "2",
+    "nick": "Rare Vamp", 
+   "price": "1200"
+}
+]

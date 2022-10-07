@@ -10,7 +10,7 @@ const usersRouters = require('./routes/usersRoutes')
 
 app.use('/', nftRoutes)
 
-app.use('/users', usersRouters)
+app.use('/', usersRouters)
 
 app.listen(3000, () =>{
     console.log('Servidor corriendo');

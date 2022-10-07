@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h2>Login</h2>
+    <%-include('../header')%>
+   
+    <section> 
+    <form method="post" class="login-form container">
+        <label for="username">Username or E-mail</label><br><br>
+        <input type="text" name="username"><br><br>
+        <label for="password">Password</label><br><br>
+        <input type="password" name="password"><br><br>
+        <div class="buttons-login">
+            <a class="btn btn-success" href="/profile">Login</a>
+            <a href="/register" class="btn btn-secondary">Register</a>
+        </div>
+    </section>
+
+    </form>
+
     
 </body>
 </html>
