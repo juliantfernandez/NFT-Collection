@@ -1,14 +1,14 @@
 [
-    {
-        "id": "1",
-        "nick": "Rare Zombie",
-        "price": "2500",
-        "image":"IMG_0421.jpeg"
-    },
-    {
-    "id": "2",
-    "nick": "Rare Vamp", 
-   "price": "1200",
-   "image":"SneakyVampiresDerivatives.png"
-}
+ {
+  "id": 1,
+  "nick": "Rare Zombie",
+  "price": "2500",
+  "image": "IMG_0421.jpeg"
+ },
+ {
+  "id": 2,
+  "nick": "Rare Vamp",
+  "price": "1200",
+  "image": "SneakyVampiresDerivatives.png"
+ }
 ]

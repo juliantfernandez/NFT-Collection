@@ -135,6 +135,8 @@ header{
  }
 
  .login-form input{
+   border-radius: 120px;
+   color: var(--black);
     padding: 10px 15px 10px 15px;
     background-color: var(--white);
     width: 400px;
@@ -148,4 +150,36 @@ header{
 
  .buttons-login a{
     padding: 10px 45px 10px 45px;
+ }
+
+ .createnft-title{
+   color: var(--btn-bg);
+   font-size: 25px;
+
+ }
+
+ .createnft-form label{
+   color: var(--white);
+ }
+
+ .createnft-form input{
+   border-radius: 120px;
+   color: var(--black);
+    padding: 10px 15px 10px 15px;
+    background-color: var(--white);
+    width: 400px;
+ }
+
+ .createnft-btn{
+   color: var(--white);
+   border: 1px solid var(--btn-bg);
+   padding: 5px 20px 5px 20px;
+   border-radius: 12px;
+   background-color: var(--btn-bg);
+   transition: .5s all;
+ }
+
+ .createnft-btn:hover{
+   background-color: #0d6efd;
+    border: 1px solid #0d6efd;
  }
