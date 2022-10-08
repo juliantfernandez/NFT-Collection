@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/images/logo.png">
+        <!--CSS-->
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>CryptoCoin | Home </title>
+    </head>
+<body> 
+<%-include('header')%>
+
+<main class="p-5"> 
+<div>
+    <h2 style="margin: 0;" class="container"><%=nft.nick%></h2>
+</div>
+
+<section class="section-nfts pt-5 container">
+    
+    <article  class="card-nft">
+        <div>
+            <img src="../nftPictures/<%=nft.image%>" alt="">
+        </div>
+        <div class="nft-info">
+            <h3>Name: <%= nft.nick %> </h3>
+            <h5>ID: <%= nft.id %></h5>
+            <p>Price: $<%= nft.price %></p>
+            <a href="/detail/<%= nft.id%>">Buy Now!</a>
+        </div>
+    </article>
+
+</section>
+</main>
+    
+</body>
+</html>
+

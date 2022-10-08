@@ -12,6 +12,7 @@ app.use('/', nftRoutes)
 
 app.use('/', usersRouters)
 
+
 app.listen(3000, () =>{
     console.log('Servidor corriendo');
 })

@@ -97,6 +97,9 @@ header{
 
  .card-nft img{
     width: 250px;
+    border-radius: 250px;
+    border: 2px solid var(--btn-bg);
+    margin-right: 25px;
  }
 
  .nft-info{

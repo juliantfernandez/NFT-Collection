@@ -10,6 +10,21 @@ const controlador = {
     },
     nftCollection: (req, res) =>{
         res.send('Colecction ')
+    },
+    create: (req, res)=>{
+        res.send('Create Your NFT')
+    },
+    detail: (req, res)=> {
+        nftid = req.params.id;
+        let nftobj;
+        for(obj of nfts){
+            if(nftid == obj.id){
+                nftobj = obj
+                break
+            }
+        }
+        res.render('detail', {nft: nftobj})
+
     }
     
 }

@@ -21,25 +21,19 @@
             <% for(i = 0; i<nft.length; i++){ %>
             <article class="card-nft">
                 <div>
-                    <img src="images/logo.png" alt="">
+                    <img src="nftPictures/<%= nft[i].image %>" alt="">
                 </div>
                 <div class="nft-info">
                     <h3>Name: <%= nft[i].nick %> </h3>
                     <h5>ID: <%= nft[i].id %></h5>
                     <p>Price: $<%= nft[i].price %></p>
-                    <a href="#">Buy Now!</a>
+                    <a href="/detail/<%= nft[i].id%>">Buy Now!</a>
                 </div>
             </article>
             <%}%>
         </section>
         
     </main>
-
-    <% //for(i = 0; i<datos.length; i++){ %>
-    <!-- <h3>Nick: <%= //datos[i].nick %></h3>
-    <h3>id: <%= //datos[i].id %> </h3> -->
-    
-    <%//}%>
     
 </body>
 </html>
