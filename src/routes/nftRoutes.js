@@ -11,5 +11,8 @@ router.post('/create', nftController.nftStore)
 
 router.get('/detail/:id', nftController.detail )
 
+router.get('/edit/:id' , nftController.edit)
+router.post('/edit/:id', nftController.update)
 
+router.post('/delete/:id', nftController.destroy)
 module.exports = router;

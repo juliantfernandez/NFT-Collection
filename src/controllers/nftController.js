@@ -42,6 +42,47 @@ const controlador = {
         res.redirect('/')
 
         
+    },
+    edit:(req, res) =>{
+        nftEditId = req.params.id;
+        let elementnft;
+
+        for(element of nfts){
+            if (nftEditId == element.id){
+                elementnft = element
+                break
+            }
+        }
+        res.render('edit' ,{nft: elementnft} )
+    },
+    update:(req,res) => {
+        nftEditId = req.params.id;
+
+        for(element of nfts){
+            if (nftEditId == element.id){
+                 element.nick = req.body.nick ,
+                 element.price = req.body.price
+               
+                break
+            }
+        }
+
+        fs.writeFileSync(nftFilePath, JSON.stringify(nfts, null, " "))
+        
+
+        res.redirect('/')
+    },
+    destroy:(req, res)=>{
+        nftEditId = req.params.id;
+
+        let arrnft = nfts.filter(function(elemento){
+            return elemento.id != nftEditId
+        })
+        
+        fs.writeFileSync(nftFilePath, JSON.stringify(arrnft, null, " "))
+        
+
+        res.redirect('/')
     }
     
 }
