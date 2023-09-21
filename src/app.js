@@ -5,6 +5,8 @@ app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.resolve(__dirname, '../public')));
+app.set('views', path.join(__dirname, 'views'));
+
 
 const nftRoutes = require('./routes/nftRoutes')
 const usersRouters = require('./routes/usersRoutes')

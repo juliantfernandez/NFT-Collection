@@ -6,7 +6,7 @@ let nfts = JSON.parse(fs.readFileSync(nftFilePath, 'utf-8'))
 
 const controlador = {
     index: (req, res) => {
-        nfts = JSON.parse(fs.readFileSync(nftFilePath, 'utf-8'))
+        // nfts = JSON.parse(fs.readFileSync(nftFilePath, 'utf-8'))
         
         res.render('index', {nft: nfts});
     },

@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-let nftController = require('./../controllers/nftController.js')
+let nftController = require('../controllers/nftController')
 router.get('/', nftController.index)
 
 router.get('/nftCollection', nftController.nftCollection)
